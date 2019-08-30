@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Use float values"; ObjectID = "29E-9h-Luq"; */
+"29E-9h-Luq.text" = "Использовать числа с точкой";
+
+/* Class = "UILabel"; text = "Use signed values"; ObjectID = "TO5-Nh-thW"; */
+"TO5-Nh-thW.text" = "Использовать отрицательные значения";
+
+/* Class = "UILabel"; text = "Addition"; ObjectID = "Uk3-fN-dgF"; */
+"Uk3-fN-dgF.text" = "Суммирование";
+
+/* Class = "UIButton"; normalTitle = "Calculate result"; ObjectID = "Yua-j9-cXm"; */
+"Yua-j9-cXm.normalTitle" = "Вычислить";
+
+/* Class = "UITextField"; placeholder = "Input first value"; ObjectID = "aEh-9D-7IK"; */
+"aEh-9D-7IK.placeholder" = "Введите первое значение";
+
+/* Class = "UILabel"; text = "Subtraction"; ObjectID = "hsJ-rO-feJ"; */
+"hsJ-rO-feJ.text" = "Вычитание";
+
+/* Class = "UILabel"; text = "Multiplication"; ObjectID = "jtx-s0-JbB"; */
+"jtx-s0-JbB.text" = "Умножение";
+
+/* Class = "UILabel"; text = "Division"; ObjectID = "oyW-as-hrz"; */
+"oyW-as-hrz.text" = "Деление";
+
+/* Class = "UITextField"; placeholder = "Result"; ObjectID = "xWf-Au-eXg"; */
+"xWf-Au-eXg.placeholder" = "Результат";
+
+/* Class = "UITextField"; placeholder = "Input second value"; ObjectID = "z7X-nA-zwF"; */
+"z7X-nA-zwF.placeholder" = "Введите второе значение";

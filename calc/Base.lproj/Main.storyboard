@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input first value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEh-9D-7IK">
+                                <rect key="frame" x="20" y="49" width="374" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fAL-cp-lTi">
+                                <rect key="frame" x="20" y="149" width="20" height="104"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWA-aJ-MMh" customClass="RadioButton" customModule="calc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="YRa-1A-Ggp"/>
+                                            <constraint firstAttribute="width" secondItem="SWA-aJ-MMh" secondAttribute="height" multiplier="1:1" id="hmO-x8-H6z"/>
+                                        </constraints>
+                                        <state key="normal" image="UnchosenRadioButton"/>
+                                        <connections>
+                                            <action selector="deselectAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpb-DB-NcJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cL-xV-Sgu" customClass="RadioButton" customModule="calc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="01o-Mw-lFU"/>
+                                            <constraint firstAttribute="width" secondItem="0cL-xV-Sgu" secondAttribute="height" multiplier="1:1" id="MI8-J8-0lD"/>
+                                        </constraints>
+                                        <state key="normal" image="UnchosenRadioButton"/>
+                                        <connections>
+                                            <action selector="deselectAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGa-3I-fxZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vT-Gf-5VK" customClass="RadioButton" customModule="calc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="56" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8vT-Gf-5VK" secondAttribute="height" multiplier="1:1" id="Ggs-DW-t4w"/>
+                                            <constraint firstAttribute="height" constant="20" id="L86-PZ-6sR"/>
+                                        </constraints>
+                                        <state key="normal" image="UnchosenRadioButton"/>
+                                        <connections>
+                                            <action selector="deselectAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="di1-Uu-6p3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOU-cR-lUO" customClass="RadioButton" customModule="calc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="84" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="MOU-cR-lUO" secondAttribute="height" multiplier="1:1" id="88h-aI-pDY"/>
+                                            <constraint firstAttribute="height" constant="20" id="UfE-h8-5uO"/>
+                                        </constraints>
+                                        <state key="normal" image="UnchosenRadioButton"/>
+                                        <connections>
+                                            <action selector="deselectAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lwp-e6-BFN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use signed values" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO5-Nh-thW">
+                                <rect key="frame" x="73" y="315.5" width="300" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbT-Ch-ZsS" customClass="CheckBox" customModule="calc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="321" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nbT-Ch-ZsS" secondAttribute="height" multiplier="1:1" id="KbB-hg-0HA"/>
+                                    <constraint firstAttribute="height" constant="20" id="xbi-V9-HSL"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="signedChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JiX-vO-jXF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yua-j9-cXm">
+                                <rect key="frame" x="20" y="351" width="374" height="30"/>
+                                <state key="normal" title="Calculate result"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7wa-ZX-QnO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8y-Lq-86V" customClass="CheckBox" customModule="calc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="281" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="i06-uy-m7H"/>
+                                    <constraint firstAttribute="width" secondItem="Z8y-Lq-86V" secondAttribute="height" multiplier="1:1" id="qUF-HF-oHe"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="floatChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v1f-hI-GAn"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="dmn-V3-JEj">
+                                <rect key="frame" x="73" y="149" width="302" height="103"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Addition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk3-fN-dgF">
+                                        <rect key="frame" x="0.0" y="0.0" width="302" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtraction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsJ-rO-feJ">
+                                        <rect key="frame" x="0.0" y="27.5" width="302" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Division" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyW-as-hrz">
+                                        <rect key="frame" x="0.0" y="55" width="302" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiplication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtx-s0-JbB">
+                                        <rect key="frame" x="0.0" y="82.5" width="302" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use float values" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29E-9h-Luq">
+                                <rect key="frame" x="73" y="275" width="300" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input second value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z7X-nA-zwF">
+                                <rect key="frame" x="20" y="99" width="374" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Result" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWf-Au-eXg">
+                                <rect key="frame" x="20" y="822" width="374" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aEh-9D-7IK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="23q-Be-jDQ"/>
+                            <constraint firstItem="xWf-Au-eXg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2gF-xS-t3W"/>
+                            <constraint firstItem="nbT-Ch-ZsS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="55k-rH-h1b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xWf-Au-eXg" secondAttribute="trailing" constant="20" id="6E7-ww-Q1y"/>
+                            <constraint firstItem="z7X-nA-zwF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Sb-ln-8sa"/>
+                            <constraint firstItem="fAL-cp-lTi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9tx-kJ-sqI"/>
+                            <constraint firstItem="TO5-Nh-thW" firstAttribute="top" secondItem="29E-9h-Luq" secondAttribute="bottom" constant="20" id="EL4-zQ-N6t"/>
+                            <constraint firstItem="Yua-j9-cXm" firstAttribute="top" secondItem="nbT-Ch-ZsS" secondAttribute="bottom" constant="10" id="GNX-cn-kdf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yua-j9-cXm" secondAttribute="trailing" constant="20" id="HWr-TJ-1H2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TO5-Nh-thW" secondAttribute="trailing" constant="41" id="Hcr-Zi-O9c"/>
+                            <constraint firstItem="Z8y-Lq-86V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IQO-NC-r8p"/>
+                            <constraint firstItem="29E-9h-Luq" firstAttribute="leading" secondItem="Z8y-Lq-86V" secondAttribute="trailing" constant="33" id="ImG-jx-5EN"/>
+                            <constraint firstItem="dmn-V3-JEj" firstAttribute="top" secondItem="z7X-nA-zwF" secondAttribute="bottom" constant="20" id="L83-pX-74D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aEh-9D-7IK" secondAttribute="trailing" constant="20" id="MBw-yB-AAr"/>
+                            <constraint firstItem="TO5-Nh-thW" firstAttribute="leading" secondItem="nbT-Ch-ZsS" secondAttribute="trailing" constant="33" id="SKz-5T-cFU"/>
+                            <constraint firstItem="Z8y-Lq-86V" firstAttribute="top" secondItem="dmn-V3-JEj" secondAttribute="bottom" constant="29" id="Sqg-2x-DkL"/>
+                            <constraint firstItem="29E-9h-Luq" firstAttribute="top" secondItem="dmn-V3-JEj" secondAttribute="bottom" constant="23" id="gWy-xl-igK"/>
+                            <constraint firstItem="nbT-Ch-ZsS" firstAttribute="top" secondItem="Z8y-Lq-86V" secondAttribute="bottom" constant="20" id="h71-a4-NuS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="29E-9h-Luq" secondAttribute="trailing" constant="41" id="iZt-LU-Q6N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xWf-Au-eXg" secondAttribute="bottom" constant="10" id="jVS-Wo-by5"/>
+                            <constraint firstItem="Yua-j9-cXm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m1M-dt-Tlq"/>
+                            <constraint firstItem="xWf-Au-eXg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Yua-j9-cXm" secondAttribute="bottom" constant="10" id="mnJ-hT-2MN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dmn-V3-JEj" secondAttribute="trailing" constant="39" id="oOk-8R-ZXJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z7X-nA-zwF" secondAttribute="trailing" constant="20" id="ocN-H8-z08"/>
+                            <constraint firstItem="aEh-9D-7IK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pWb-1A-gyz"/>
+                            <constraint firstItem="z7X-nA-zwF" firstAttribute="top" secondItem="aEh-9D-7IK" secondAttribute="bottom" constant="20" id="sam-Y4-l99"/>
+                            <constraint firstItem="fAL-cp-lTi" firstAttribute="top" secondItem="z7X-nA-zwF" secondAttribute="bottom" constant="20" id="skJ-8w-X67"/>
+                            <constraint firstItem="dmn-V3-JEj" firstAttribute="leading" secondItem="fAL-cp-lTi" secondAttribute="trailing" constant="33" id="y0K-nz-cB0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstValueField" destination="aEh-9D-7IK" id="IEM-2H-FJb"/>
+                        <outlet property="floatCheckBox" destination="Z8y-Lq-86V" id="lFR-ys-FUf"/>
+                        <outlet property="operationFourButton" destination="MOU-cR-lUO" id="Jbv-OW-Wet"/>
+                        <outlet property="operationOneButton" destination="SWA-aJ-MMh" id="7zZ-l2-QWn"/>
+                        <outlet property="operationThreeButton" destination="8vT-Gf-5VK" id="Ucz-nb-JCj"/>
+                        <outlet property="operationTwoButton" destination="0cL-xV-Sgu" id="EIM-WT-sC7"/>
+                        <outlet property="resultField" destination="xWf-Au-eXg" id="u5S-Ur-iES"/>
+                        <outlet property="secondValueField" destination="z7X-nA-zwF" id="Jdp-NY-Ymq"/>
+                        <outlet property="signCheckBox" destination="nbT-Ch-ZsS" id="rCU-6R-7tD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="UnchosenRadioButton" width="150" height="150"/>
+    </resources>
+</document>

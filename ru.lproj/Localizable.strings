@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  calc
+
+  Created by Ivan Ermak on 8/29/19.
+  Copyright © 2019 Ivan Ermak. All rights reserved.
+*/
+"Error. U did not choose any operation." = "Ошибка. Вы не выбрали операцию";
+"Error. I can't count such equation." = "Ошибка. Я не умею такое считать";
